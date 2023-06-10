@@ -13,7 +13,7 @@ import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import { useMediaQuery } from "@mui/material";
 import { ThemeProvider, createTheme } from "@mui/material";
-import categories from "../data/category";
+import categories from "../config/category";
 
 export default function SwipeableTemporaryDrawer({ setcategory }) {
   const [state, setState] = React.useState({

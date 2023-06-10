@@ -1,7 +1,12 @@
+import { Container } from "@mui/material";
 import React from "react";
 
 const NewsContent = () => {
-  return <div>Content</div>;
+  return (
+    <Container maxWidth="md">
+      <div className="content"></div>
+    </Container>
+  );
 };
 
 export default NewsContent;
