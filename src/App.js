@@ -5,6 +5,8 @@ import NewsContent from "./NewsContent/NewsContent";
 import axios from "axios";
 import apiKey from "./config/config";
 import Axios from "./config/apiconfig";
+import categories from "./config/category";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   const [category, setcategory] = useState("general");
@@ -16,20 +18,23 @@ function App() {
       const news = await Axios.get(
         `?country=in&category=${category}&apiKey=${apiKey}`
       );
+      setnews(news.articles);
       console.log(news);
+      setnewsResults(news.totalResults);
     } catch (error) {
       console.log(error);
     }
   };
-
+  // console.log(news);
   useEffect(() => {
     newsApi();
-  }, []);
+  }, [newsResults, category]);
   return (
     <>
       <div className="App">
         <Navinshorts setcategory={setcategory} />
         <NewsContent />
+        <Footer />
       </div>
     </>
   );

@@ -9,7 +9,7 @@ const Axios = axios.create({
 });
 Axios.interceptors.response.use(
   (res) => {
-    console.log("in interceptor", res);
+    // console.log("in interceptor", res);
     return res.data;
   },
   (err) => {
