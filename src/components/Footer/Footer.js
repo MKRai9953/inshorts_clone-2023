@@ -14,13 +14,13 @@ const Footer = () => {
       <hr style={{ width: "90%" }} />
       <div className="iconContainer">
         <a href="https://www.instagram.com/" target="blank">
-          <i class="fa-brands fa-instagram"></i>
+          <i className="fa-brands fa-instagram"></i>
         </a>
         <a href="https://in.linkedin.com/?original_referer=https%3A%2F%2Fwww.google.com%2F">
-          <i class="fa-brands fa-linkedin"></i>
+          <i className="fa-brands fa-linkedin"></i>
         </a>
         <a href="https://www.netlify.com/">
-          <i class="fa-solid fa-link"></i>
+          <i className="fa-solid fa-link"></i>
         </a>
       </div>
     </div>
